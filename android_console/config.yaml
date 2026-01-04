@@ -20,7 +20,7 @@ homeassistant_api: false
 hassio_api: true
 hassio_role: default
 options:
-  device_serial: null
+  device_serial: ""
   max_size: 1280
   bitrate: 8000000
   fps: 30
