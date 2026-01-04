@@ -1,0 +1,5 @@
+#!/usr/bin/with-contenv bash
+
+set -euo pipefail
+
+exec /usr/local/bin/entrypoint.sh

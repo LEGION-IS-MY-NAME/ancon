@@ -1,0 +1,22 @@
+configuration:
+  device_serial:
+    name: Device serial
+    description: Optional adb serial to prioritize and use for stay-awake commands.
+  max_size:
+    name: Max size
+    description: Suggested maximum stream height/width in pixels (client hint).
+  bitrate:
+    name: Bitrate
+    description: Suggested default bitrate in bps for scrcpy sessions.
+  fps:
+    name: FPS
+    description: Suggested default frames per second for scrcpy sessions.
+  stay_awake:
+    name: Keep device awake
+    description: Keep the device screen awake while connected (requires authorized adb).
+  autoconnect:
+    name: Auto-connect
+    description: Automatically connect when exactly one device is present.
+  log_level:
+    name: Log level
+    description: Set adb verbosity (debug enables ADB_TRACE).

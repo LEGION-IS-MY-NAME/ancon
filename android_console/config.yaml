@@ -1,0 +1,43 @@
+name: Android Console (USB scrcpy)
+version: "0.1.0"
+slug: android_console
+description: "Control Android devices over USB via scrcpy in Home Assistant Ingress."
+arch:
+  - amd64
+  - aarch64
+  - armv7
+ingress: true
+ingress_port: 8099
+panel_icon: mdi:cellphone-link
+panel_title: Android Console
+usb: true
+udev: true
+init: false
+startup: services
+boot: auto
+stage: experimental
+homeassistant_api: false
+hassio_api: true
+hassio_role: default
+options:
+  device_serial: null
+  max_size: 1280
+  bitrate: 8000000
+  fps: 30
+  stay_awake: true
+  autoconnect: true
+  log_level: info
+schema:
+  device_serial: str?
+  max_size: int?
+  bitrate: int?
+  fps: int?
+  stay_awake: bool?
+  autoconnect: bool?
+  log_level: list(info|debug)
+map:
+  - config:rw
+ports: {}
+ports_description: {}
+apparmor: false
+image: null
